@@ -334,5 +334,8 @@ footer {
   .message-wrapper .btn {
     width: 100%;
   }
+  #faq-list {
+  width: 300px;
+}
 }
 
