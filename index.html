@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HANA</title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="12.17hana.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
   <header>
@@ -13,7 +15,9 @@
       <div class="header-left">
         <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
       </div>
-      <span class="fa fa-bars menu-icon"></span>
+      <div class="menu-icon">
+        <span class="fa fa-bars"></span>
+      </div>      
       <div class="header-right">
         <a href="#">ログイン</a>
         <a href="#">新規登録</a>
@@ -23,13 +27,15 @@
   </header>
   <div class="top-wrapper">
     <div class="container">
+      <div class="top-contents">
       <h1>H A N A</h1>
       <p>シュナマルはなちゃんの紹介サイト</p>
       <div class="btn-wrapper">
-        <a href="#" class="btn signup"><span class="fa fa-instagram"></span>Instagram</a>
+        <a href="#" class="btn instagram"><span class="fa fa-instagram"></span>Instagram</a>
         <p>or</p>
         <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebook</a>
         <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitter</a>
+      </div>
       </div>
     </div>
   </div>
@@ -39,45 +45,86 @@
         <h2>contents</h2>
       </div>
       <div class="lessons">
-        
         <div class="lesson">
           <div class="lesson-icon">
             <img src="https://raw.githubusercontent.com/PoPoLabo/hana/master/outdoor1.jpg">
-            <p>Outdoor</p>
+            <p class="outdoor">Outdoor</p>
           </div>
-          <p class="text-contents">ワンちゃんスポットをはなちゃんとお届け★</p>
+          <p class="text-contents">ワンちゃんスポットを<br>はなちゃんとお届け★</p>
         </div>
-        
+      </div>
+
+      <div class="lessons">
         <div class="lesson">
           <div class="lesson-icon">
             <img src="https://raw.githubusercontent.com/PoPoLabo/hana/master/dressup1.jpg">
-            <p>DressUp</p>
+            <p class="dressup">DressUp</p>
           </div>
-          <p class="text-contents">お洋服の紹介やカット・お手入れのお話しをします♪</p>
+          <p class="text-contents">お洋服の紹介や<br>カット・お手入れのお話しをします♪</p>
         </div>
-        
+      </div>
+
+      <div class="lessons">
         <div class="lesson">
           <div class="lesson-icon">
             <img src="https://raw.githubusercontent.com/PoPoLabo/hana/master/home1.jpg">
-            <p>Home</p>
+            <p class="home">Home</p>
           </div>
-          <p class="text-contents">わんちゃんがストレスなく過ごすためのポイントをお伝えします☆</p>
-        </div>      
-        
+          <p class="text-contents">わんちゃんがストレスなく過ごす<br>ポイントをお伝えします☆</p>
+        </div>
+      </div>
+
+      <div class="lessons">
         <div class="lesson">
           <div class="lesson-icon">
             <img src="https://raw.githubusercontent.com/PoPoLabo/hana/master/garden1.jpg">
-            <p></p>
+            <p class="health">Health</p>
           </div>
-          <p class="text-contents">ダイエット中のはなちゃん。笑　わんちゃんの健康管理についてのお話し♪</p>
+          <p class="text-contents">ダイエット中のはなちゃん。笑<br>わんちゃんの健康管理について♪</p>
         </div>
-        
-        
-        
-      </div>      
+      </div>
+
       <div class="clear"></div>
     </div>
   </div>
+
+  <div class="faq-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2>はなちゃんについて</h2>
+        <div class="faq">
+          <ul id="faq-list">
+
+            <li class="faq-list-item">
+              <p class="question">シュナマルとは犬種ですか？</p>
+              <span>+</span>
+              <div class="answer">
+               <p>いいえ、シュナウザーとマルチーズのミックス犬です</p>
+              </div>
+            </li>
+
+            <li class="faq-list-item">
+              <p class="question">はなちゃんの性別はどちらですか？</p>
+              <span>+</span>
+              <div class="answer">
+               <p>女の子です</p>
+              </div>
+            </li>
+
+            <li class="faq-list-item">
+              <p class="question">はなちゃんは何歳ですか？</p>
+              <span>+</span>
+              <div class="answer">
+               <p>2019年現在で７歳です</p>
+              </div>
+            </li>
+           </ul>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
   <div class="message-wrapper">
     <div class="container">
       <div class="heading">
@@ -93,5 +140,6 @@
       <p>Learn to Code, Learn to be Creative.</p>
     </div>
   </footer>
+  <script src="12.17hana.js"></script>
 </body>
 </html>
